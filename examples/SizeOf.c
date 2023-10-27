@@ -1,9 +1,22 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-int x[]={3,5,6,45,67,8,99,0,3,22,5,44,47,89,95,42,2,331,45,6577,86,43,12,3445,323,5342,2,
-234,42,66,4,21,57,8,56,7,8,9,33,446,67,22,1234,6,4,347,9,97,422,};
+int main() {
+    int a;
 
-printf("%i",sizeof(x)/sizeof(x[0]));
-return 0;
+    printf("sizeof(a) = %ld bytes\n", sizeof(a));
+
+    printf("sizeof(int) = %ld bytes\n", sizeof(int));
+    printf("sizeof(short) = %ld bytes\n", sizeof(short));
+    printf("sizeof(long) = %ld bytes\n", sizeof(long));
+    printf("sizeof(unsigned long) = %ld bytes\n", sizeof(unsigned long));
+    printf("sizeof(float) = %ld bytes\n", sizeof(float));
+    printf("sizeof(double) = %ld bytes\n\n", sizeof(double));
+
+    printf("sizeof(void *) = %ld bytes\n", sizeof(void *));
+    printf("sizeof(int *) = %ld bytes\n", sizeof(int *));
+    printf("sizeof(int **) = %ld bytes\n", sizeof(int **));
+    printf("sizeof(int ***) = %ld bytes\n", sizeof(int ***));
+    printf("sizeof(float *) = %ld bytes\n", sizeof(float *));
+
+    return 0;
 }
